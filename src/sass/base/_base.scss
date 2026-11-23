@@ -1,5 +1,7 @@
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7.5rem;
 
   &.sr .load-hidden {
     visibility: hidden;
@@ -10,6 +12,8 @@ body {
   font-family: "Montserrat", sans-serif;
   text-align: center;
   scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Scrollbar */

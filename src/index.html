@@ -34,10 +34,20 @@
   <body>
     <div id="top"></div>
 
-    <!-- **** Navigation **** -->
+    <!-- **** Sticky Navigation **** -->
     <nav class="site-nav" aria-label="Main navigation">
       <div class="container site-nav__inner">
-        <a class="site-nav__brand" href="#top">TRAN DANG KHOA</a>
+        <a class="site-nav__brand" href="#top"
+          >TRAN DANG <span>KHOA</span></a
+        >
+        <button
+          class="site-nav__toggle"
+          type="button"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
         <ul class="site-nav__links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
@@ -45,6 +55,15 @@
           <li><a href="#education">Education</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li>
+            <a
+              class="site-nav__resume"
+              rel="noreferrer"
+              target="_blank"
+              href="assets/resume.pdf"
+              >Resume</a
+            >
+          </li>
         </ul>
       </div>
     </nav>
@@ -52,27 +71,44 @@
     <!-- **** Hero Section **** -->
     <section id="hero" class="jumbotron">
       <div class="container">
+        <div class="hero-eyebrow-wrap load-hidden">
+          <span class="hero-eyebrow">
+            <i class="fa fa-code" aria-hidden="true"></i>
+            Software Engineering &bull; Nha Trang University
+          </span>
+        </div>
         <h1 class="hero-title load-hidden">
           Hi, my name is <span class="text-color-main">Tran Dang Khoa</span>
           <br />
           I'm a Full-Stack Developer.
         </h1>
         <p class="hero-meta load-hidden">
-          <a href="mailto:tdangkhoa0324@gmail.com">tdangkhoa0324@gmail.com</a>
-          &bull;
-          <a href="tel:+84942003416">0942003416</a>
-          &bull;
-          Nha Trang, Khanh Hoa
-          &bull;
+          <a href="mailto:tdangkhoa0324@gmail.com">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            tdangkhoa0324@gmail.com
+          </a>
+          <a href="tel:+84942003416">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            0942003416
+          </a>
+          <span>
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            Nha Trang, Khanh Hoa
+          </span>
           <a
             rel="noreferrer"
             target="_blank"
             href="https://github.com/AgeIIDiont"
-            >github.com/AgeIIDiont</a
           >
+            <i class="fa fa-github" aria-hidden="true"></i>
+            github.com/AgeIIDiont
+          </a>
         </p>
         <p class="hero-cta load-hidden">
-          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#experience"
+          <a
+            rel="noreferrer"
+            class="cta-btn cta-btn--solid"
+            href="#experience"
             >Explore CV</a
           >
           <a
@@ -92,18 +128,20 @@
       <div class="container">
         <h2 class="section-title load-hidden">About me</h2>
         <div class="row about-wrapper">
-          <div class="col-md-6 col-sm-12">
+          <div class="col-md-5 col-sm-12">
             <div class="about-wrapper__image load-hidden">
-              <img
-                alt="Tran Dang Khoa"
-                class="img-fluid rounded shadow-lg"
-                height="auto"
-                width="300px"
-                src="assets/profile.jpg"
-              />
+              <div class="about-portrait-frame">
+                <img
+                  alt="Tran Dang Khoa"
+                  class="img-fluid"
+                  height="auto"
+                  width="280px"
+                  src="assets/profile.jpg"
+                />
+              </div>
             </div>
           </div>
-          <div class="col-md-6 col-sm-12">
+          <div class="col-md-7 col-sm-12">
             <div class="about-wrapper__info load-hidden">
               <p class="about-wrapper__info-text">
                 I am an Information Technology undergraduate specializing in
@@ -117,7 +155,21 @@
                 responsive web interfaces with ReactJS, TypeScript, Vite, and
                 Tailwind CSS.
               </p>
-              <span class="d-flex mt-3">
+              <div class="about-highlights">
+                <span class="about-highlights__item">
+                  <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                  NTU Software Engineering
+                </span>
+                <span class="about-highlights__item">
+                  <i class="fa fa-briefcase" aria-hidden="true"></i>
+                  Widosoft Intern
+                </span>
+                <span class="about-highlights__item">
+                  <i class="fa fa-globe" aria-hidden="true"></i>
+                  Live Web Deployments
+                </span>
+              </div>
+              <span class="d-flex mt-4">
                 <a
                   rel="noreferrer"
                   target="_blank"
@@ -142,7 +194,10 @@
         </h2>
         <div class="cv-card cv-reveal load-hidden">
           <div class="cv-card__header">
-            <h3 class="cv-card__title">Software Developer Intern</h3>
+            <h3 class="cv-card__title">
+              <i class="fa fa-briefcase" aria-hidden="true"></i>
+              Software Developer Intern
+            </h3>
             <span class="cv-card__meta">Nha Trang, Vietnam</span>
           </div>
           <div class="cv-card__subrow">
@@ -181,7 +236,7 @@
           <h2 class="section-title dark-blue-text">Projects</h2>
 
           <!-- EcoGuide -->
-          <div class="row">
+          <div class="row align-items-center">
             <div class="col-lg-5 col-sm-12">
               <div class="project-wrapper__text load-hidden">
                 <h3 class="project-wrapper__text-title">EcoGuide</h3>
@@ -205,6 +260,13 @@
                     third-party API integrations, deployed on a Cloud VPS.
                   </li>
                 </ul>
+                <div class="project-tech-pills">
+                  <span>ReactJS</span>
+                  <span>Tailwind CSS</span>
+                  <span>Node.js</span>
+                  <span>Express.js</span>
+                  <span>Cloud VPS</span>
+                </div>
                 <a
                   rel="noreferrer"
                   target="_blank"
@@ -232,16 +294,30 @@
                 >
                   <div
                     data-tilt
-                    data-tilt-max="4"
+                    data-tilt-max="3"
                     data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
+                    data-tilt-max-glare="0.35"
+                    class="thumbnail project-browser js-tilt"
                   >
-                    <img
-                      alt="EcoGuide Web Platform"
-                      class="img-fluid"
-                      src="assets/ecoguide.png"
-                    />
+                    <div class="project-browser__bar">
+                      <span
+                        class="project-browser__dot project-browser__dot--red"
+                      ></span>
+                      <span
+                        class="project-browser__dot project-browser__dot--yellow"
+                      ></span>
+                      <span
+                        class="project-browser__dot project-browser__dot--green"
+                      ></span>
+                      <span class="project-browser__url">ecoguide.vn</span>
+                    </div>
+                    <div class="project-browser__viewport">
+                      <img
+                        alt="EcoGuide Web Platform"
+                        class="project-browser__img"
+                        src="assets/ecoguide.png"
+                      />
+                    </div>
                   </div>
                 </a>
               </div>
@@ -250,7 +326,7 @@
           <!-- /END Project -->
 
           <!-- EcoGuide Club -->
-          <div class="row">
+          <div class="row align-items-center">
             <div class="col-lg-5 col-sm-12">
               <div class="project-wrapper__text load-hidden">
                 <h3 class="project-wrapper__text-title">EcoGuide Club</h3>
@@ -274,6 +350,12 @@
                     operations and public sharing.
                   </li>
                 </ul>
+                <div class="project-tech-pills">
+                  <span>React</span>
+                  <span>TypeScript</span>
+                  <span>Vite</span>
+                  <span>SEO / Open Graph</span>
+                </div>
                 <a
                   rel="noreferrer"
                   target="_blank"
@@ -301,16 +383,30 @@
                 >
                   <div
                     data-tilt
-                    data-tilt-max="4"
+                    data-tilt-max="3"
                     data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
+                    data-tilt-max-glare="0.35"
+                    class="thumbnail project-browser js-tilt"
                   >
-                    <img
-                      alt="EcoGuide Club Web Portal"
-                      class="img-fluid"
-                      src="assets/ecoguide-club.png"
-                    />
+                    <div class="project-browser__bar">
+                      <span
+                        class="project-browser__dot project-browser__dot--red"
+                      ></span>
+                      <span
+                        class="project-browser__dot project-browser__dot--yellow"
+                      ></span>
+                      <span
+                        class="project-browser__dot project-browser__dot--green"
+                      ></span>
+                      <span class="project-browser__url">hdv.ecoguide.vn</span>
+                    </div>
+                    <div class="project-browser__viewport">
+                      <img
+                        alt="EcoGuide Club Web Portal"
+                        class="project-browser__img"
+                        src="assets/ecoguide-club.png"
+                      />
+                    </div>
                   </div>
                 </a>
               </div>
@@ -319,7 +415,7 @@
           <!-- /END Project -->
 
           <!-- BioLoop -->
-          <div class="row">
+          <div class="row align-items-center">
             <div class="col-lg-5 col-sm-12">
               <div class="project-wrapper__text load-hidden">
                 <h3 class="project-wrapper__text-title">BioLoop</h3>
@@ -343,6 +439,13 @@
                     and Express.js, hosted on a Cloud VPS.
                   </li>
                 </ul>
+                <div class="project-tech-pills">
+                  <span>ReactJS</span>
+                  <span>Tailwind CSS</span>
+                  <span>Node.js</span>
+                  <span>Express.js</span>
+                  <span>Cloud VPS</span>
+                </div>
                 <a
                   rel="noreferrer"
                   target="_blank"
@@ -370,16 +473,30 @@
                 >
                   <div
                     data-tilt
-                    data-tilt-max="4"
+                    data-tilt-max="3"
                     data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
+                    data-tilt-max-glare="0.35"
+                    class="thumbnail project-browser js-tilt"
                   >
-                    <img
-                      alt="BioLoop B2B Marketplace"
-                      class="img-fluid"
-                      src="assets/bioloop.png"
-                    />
+                    <div class="project-browser__bar">
+                      <span
+                        class="project-browser__dot project-browser__dot--red"
+                      ></span>
+                      <span
+                        class="project-browser__dot project-browser__dot--yellow"
+                      ></span>
+                      <span
+                        class="project-browser__dot project-browser__dot--green"
+                      ></span>
+                      <span class="project-browser__url">bioloopvn.site</span>
+                    </div>
+                    <div class="project-browser__viewport">
+                      <img
+                        alt="BioLoop B2B Marketplace"
+                        class="project-browser__img"
+                        src="assets/bioloop.png"
+                      />
+                    </div>
                   </div>
                 </a>
               </div>
@@ -401,7 +518,10 @@
           <div class="col-md-6 col-sm-12">
             <div class="cv-card cv-reveal load-hidden">
               <div class="cv-card__header">
-                <h3 class="cv-card__title">Nha Trang University</h3>
+                <h3 class="cv-card__title">
+                  <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                  Nha Trang University
+                </h3>
                 <span class="cv-card__meta">Nha Trang, Vietnam</span>
               </div>
               <div class="cv-card__subrow">
@@ -418,6 +538,7 @@
             <div class="cv-card cv-reveal load-hidden">
               <div class="cv-card__header">
                 <h3 class="cv-card__title">
+                  <i class="fa fa-users" aria-hidden="true"></i>
                   Delegation &amp; Association of Faculty of IT
                 </h3>
                 <span class="cv-card__meta">Commissioner</span>
@@ -446,7 +567,10 @@
         <div class="row g-4">
           <div class="col-md-6 col-sm-12">
             <div class="skill-card cv-reveal load-hidden">
-              <h3 class="skill-card__title">Languages</h3>
+              <h3 class="skill-card__title">
+                <i class="fa fa-code" aria-hidden="true"></i>
+                Languages
+              </h3>
               <div class="skill-tags">
                 <span class="skill-tag">JavaScript</span>
                 <span class="skill-tag">TypeScript</span>
@@ -460,7 +584,10 @@
 
           <div class="col-md-6 col-sm-12">
             <div class="skill-card cv-reveal load-hidden">
-              <h3 class="skill-card__title">Language Skills</h3>
+              <h3 class="skill-card__title">
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                Language Skills
+              </h3>
               <div class="skill-tags">
                 <span class="skill-tag">English</span>
                 <span class="skill-tag">Vietnamese (Native)</span>
@@ -470,11 +597,15 @@
 
           <div class="col-md-6 col-sm-12">
             <div class="skill-card cv-reveal load-hidden">
-              <h3 class="skill-card__title">Technologies</h3>
+              <h3 class="skill-card__title">
+                <i class="fa fa-wrench" aria-hidden="true"></i>
+                Technologies
+              </h3>
               <div class="skill-tags">
                 <span class="skill-tag">ReactJS</span>
                 <span class="skill-tag">Redux</span>
                 <span class="skill-tag">Vite</span>
+                <span class="skill-tag">Parcel</span>
                 <span class="skill-tag">Tailwind CSS</span>
                 <span class="skill-tag">Bootstrap</span>
                 <span class="skill-tag">MUI</span>
@@ -496,7 +627,10 @@
 
           <div class="col-md-6 col-sm-12">
             <div class="skill-card cv-reveal load-hidden">
-              <h3 class="skill-card__title">Core Skills</h3>
+              <h3 class="skill-card__title">
+                <i class="fa fa-cogs" aria-hidden="true"></i>
+                Core Skills
+              </h3>
               <div class="skill-tags">
                 <span class="skill-tag">RESTful APIs</span>
                 <span class="skill-tag">MVC Architecture</span>
@@ -568,13 +702,7 @@
         <hr />
 
         <p class="footer__text">
-          &copy; 2026 - Tran Dang Khoa | Built with
-          <a
-            rel="noreferrer"
-            href="https://github.com/cobiwave/simplefolio"
-            target="_blank"
-            >Simplefolio</a
-          >
+          &copy; 2026 - Tran Dang Khoa
         </p>
       </div>
     </footer>
