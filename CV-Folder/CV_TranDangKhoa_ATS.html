@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tran Dang Khoa - Full-Stack Developer CV</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 10.5mm 13mm;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      color: #000000;
+      font-family: "Times New Roman", Times, serif;
+      font-size: 10pt;
+      line-height: 1.32;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    @media screen {
+      body {
+        background: #f3f4f6;
+        padding: 20px 0;
+      }
+      .page {
+        width: 210mm;
+        min-height: 297mm;
+        margin: 0 auto;
+        padding: 10.5mm 13mm;
+        background: #ffffff;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+      }
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+      }
+      .page {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    }
+
+    a {
+      color: #000000;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .header h1 {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 23pt;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
+      margin: 0 0 3px 0;
+      line-height: 1.12;
+    }
+
+    .contact-line {
+      font-size: 9.6pt;
+      margin: 0;
+      color: #111111;
+    }
+
+    .section {
+      margin-top: 9px;
+    }
+
+    .section h2 {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 13pt;
+      font-weight: 700;
+      margin: 0 0 5px 0;
+      padding-bottom: 2px;
+      border-bottom: 1px solid #000000;
+      line-height: 1.18;
+    }
+
+    .entry {
+      margin-bottom: 7.5px;
+      break-inside: avoid;
+    }
+
+    .entry:last-child {
+      margin-bottom: 2px;
+    }
+
+    .entry-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 12px;
+    }
+
+    .entry-title {
+      font-weight: 700;
+      font-size: 10.2pt;
+    }
+
+    .entry-right {
+      font-size: 9.8pt;
+      white-space: nowrap;
+      text-align: right;
+    }
+
+    .entry-sub {
+      font-style: italic;
+      font-size: 9.8pt;
+    }
+
+    .entry-plain {
+      font-size: 9.9pt;
+    }
+
+    ul.bullets {
+      margin: 3px 0 0 0;
+      padding-left: 14px;
+      list-style-type: disc;
+    }
+
+    ul.bullets li {
+      margin-bottom: 2px;
+      text-align: left;
+    }
+
+    ul.bullets li:last-child {
+      margin-bottom: 0;
+    }
+
+    .info-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .info-list li {
+      margin-bottom: 4.5px;
+      line-height: 1.4;
+    }
+
+    .info-list li:last-child {
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <!-- Header -->
+    <header class="header">
+      <h1>TRAN DANG KHOA</h1>
+      <p class="contact-line">
+        <a href="mailto:tdangkhoa0324@gmail.com">tdangkhoa0324@gmail.com</a>
+        &bull;
+        <a href="tel:+84942003416">0942003416</a>
+        &bull;
+        Nha Trang, Khanh Hoa
+        &bull;
+        <a href="https://github.com/AgeIIDiont" target="_blank" rel="noopener">github.com/AgeIIDiont</a>
+      </p>
+    </header>
+
+    <!-- Work Experience -->
+    <section class="section">
+      <h2>Work Experience</h2>
+
+      <div class="entry">
+        <div class="entry-row">
+          <div class="entry-title">Software Developer Intern</div>
+          <div class="entry-right">Nha Trang, Vietnam</div>
+        </div>
+        <div class="entry-row">
+          <div class="entry-sub">Widosoft - software outsourcing company developing web, mobile, and enterprise systems</div>
+          <div class="entry-right">Nov. 2023 - Jan. 2024</div>
+        </div>
+        <ul class="bullets">
+          <li>Architected and normalized relational database schemas using MySQL and SQL, establishing structured table relationships and consistent query foundations across core system entities.</li>
+          <li>Developed an Admin Dashboard featuring statistical overviews, full CRUD operations, and content moderation workflows using MVC architecture, RESTful APIs, and role-based authentication.</li>
+          <li>Delivered and refactored full-stack project modules in collaboration with the engineering team, validating API endpoints with Postman and managing source code via Git/GitHub.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section">
+      <h2>Projects</h2>
+
+      <div class="entry">
+        <div class="entry-row">
+          <div class="entry-title">Full-Stack Developer</div>
+          <div class="entry-right">Nha Trang, Vietnam</div>
+        </div>
+        <div class="entry-row">
+          <div class="entry-sub">EcoGuide (<a href="https://ecoguide.vn/" target="_blank" rel="noopener">ecoguide.vn</a>) - eco-tourism booking and travel management web platform</div>
+        </div>
+        <ul class="bullets">
+          <li>Built responsive booking interfaces and interactive user workflows using ReactJS and Tailwind CSS across desktop and mobile viewports.</li>
+          <li>Engineered backend RESTful APIs with Node.js and Express.js for structured data management, authentication, and third-party API integrations, deployed on a Cloud VPS.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-row">
+          <div class="entry-title">Web Developer</div>
+          <div class="entry-right">Nha Trang, Vietnam</div>
+        </div>
+        <div class="entry-row">
+          <div class="entry-sub">EcoGuide Club (<a href="https://hdv.ecoguide.vn/" target="_blank" rel="noopener">hdv.ecoguide.vn</a>) - web portal and activity management system for NTU Tour Guide Club</div>
+        </div>
+        <ul class="bullets">
+          <li>Built a responsive club web portal using React, TypeScript, and Vite to publish activity updates and training schedules for NTU Faculty of Tourism students.</li>
+          <li>Implemented member attendance tracking, event management flows, and SEO/Open Graph metadata for structured club operations and public sharing.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-row">
+          <div class="entry-title">Full-Stack Developer</div>
+          <div class="entry-right">Nha Trang, Vietnam</div>
+        </div>
+        <div class="entry-row">
+          <div class="entry-sub">BioLoop (<a href="https://bioloopvn.site/" target="_blank" rel="noopener">bioloopvn.site</a>) - B2B circular economy marketplace for agricultural by-products</div>
+        </div>
+        <ul class="bullets">
+          <li>Developed modular frontend pages and responsive B2B browsing flows using ReactJS and Tailwind CSS for agricultural supplier and buyer interactions.</li>
+          <li>Implemented RESTful API services, authentication, authorization, and real-time web capabilities using Node.js and Express.js, hosted on a Cloud VPS.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section">
+      <h2>Education</h2>
+
+      <div class="entry">
+        <div class="entry-row">
+          <div class="entry-title">Nha Trang University</div>
+          <div class="entry-right">Nha Trang, Vietnam</div>
+        </div>
+        <div class="entry-row">
+          <div class="entry-plain">Information Technology - Specialization: Software Engineering</div>
+          <div class="entry-right">2022 - 2026</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Activities -->
+    <section class="section">
+      <h2>Activities</h2>
+
+      <div class="entry">
+        <div class="entry-row">
+          <div class="entry-title">Commissioner, Delegation &amp; Association of Faculty of Information Technology</div>
+          <div class="entry-right">Nov. 2022 - 2026</div>
+        </div>
+        <div class="entry-plain">Supported and organized Youth Union and Student Association activities at Nha Trang University.</div>
+      </div>
+    </section>
+
+    <!-- Additional Information -->
+    <section class="section">
+      <h2>Additional Information</h2>
+
+      <ul class="info-list">
+        <li><strong>Languages:</strong> JavaScript, TypeScript, PHP, SQL, HTML5, CSS3</li>
+        <li><strong>Technologies:</strong> ReactJS, Redux, Vite, Tailwind CSS, Bootstrap, MUI, SASS, styled-components, Blade Template, Node.js (Express.js), Laravel, WordPress, MySQL, MongoDB, Firebase, Git/GitHub, Postman, Cloud VPS</li>
+        <li><strong>Core Skills:</strong> RESTful APIs, MVC Architecture, Eloquent ORM, Authentication &amp; Authorization, Database Design, Third-Party API Integration, Real-Time Web Features</li>
+        <li><strong>Language Skills:</strong> English, Vietnamese (Native)</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,274 @@
+// Top Navigation
+.site-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  padding: 2rem 0;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+
+    @include respond(tab-port) {
+      justify-content: center;
+    }
+  }
+
+  &__brand {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: $dark-blue-text;
+    letter-spacing: 0.5px;
+
+    @include respond(tab-port) {
+      display: none;
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    a {
+      font-size: 1.45rem;
+      font-weight: 600;
+      color: $dark-blue-text;
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+.hero-meta {
+  font-size: 1.6rem;
+  color: #525266;
+  margin-bottom: 2.8rem;
+  text-align: left;
+
+  @include respond(tab-port) {
+    text-align: center;
+  }
+
+  a {
+    color: inherit;
+    font-size: inherit;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+
+.hero-cta {
+  gap: 1.6rem;
+  flex-wrap: wrap;
+}
+
+// Work Experience Section
+#experience {
+  background-color: $white-color;
+  color: $dark-blue-text;
+  margin-top: -10rem;
+  padding-top: 15rem;
+  padding-bottom: 6rem;
+
+  @include respond(tab-land) {
+    margin-top: 0;
+    padding-top: 6rem;
+  }
+}
+
+.cv-card {
+  background: $white-color;
+  border: 1px solid #e5e7eb;
+  border-left: 4px solid $primary-color;
+  border-radius: 0.8rem;
+  padding: 2.8rem 3rem;
+  text-align: left;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  height: 100%;
+
+  @include respond(phone) {
+    padding: 2rem;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.8rem 2rem;
+    margin-bottom: 0.4rem;
+  }
+
+  &__title {
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: $dark-blue-text;
+    margin: 0;
+  }
+
+  &__meta {
+    font-size: 1.45rem;
+    font-weight: 600;
+    color: $primary-color;
+    white-space: nowrap;
+  }
+
+  &__subrow {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.6rem 2rem;
+    margin-bottom: 1.4rem;
+  }
+
+  &__subtitle {
+    font-size: 1.55rem;
+    font-style: italic;
+    color: #4b5563;
+    margin: 0;
+  }
+
+  &__date {
+    font-size: 1.45rem;
+    color: #6b7280;
+    white-space: nowrap;
+  }
+
+  &__text {
+    font-size: 1.55rem;
+    line-height: 1.6;
+    color: #374151;
+    margin: 0;
+  }
+
+  &__bullets {
+    margin: 0;
+    padding-left: 2rem;
+
+    li {
+      font-size: 1.55rem;
+      line-height: 1.65;
+      color: #374151;
+      margin-bottom: 0.8rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+// Project enhancements inside Projects section
+.project-meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.8rem 1.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.project-badge {
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 0.35rem 1rem;
+  border-radius: 999px;
+  background: rgba($primary-color, 0.12);
+  color: darken($primary-color, 8%);
+}
+
+.project-location {
+  font-size: 1.35rem;
+  color: #6b7280;
+}
+
+.project-tagline {
+  font-style: italic;
+  font-size: 1.5rem;
+  color: #4b5563;
+  margin-bottom: 1.2rem;
+}
+
+.project-bullets {
+  margin: 0 0 2rem 0;
+  padding-left: 1.9rem;
+
+  li {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: #374151;
+    margin-bottom: 0.7rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// Education & Activities Section
+#education {
+  background-color: #f8fafc;
+  color: $dark-blue-text;
+  padding: 7rem 0;
+}
+
+// Skills & Additional Information Section
+#skills {
+  background-color: $white-color;
+  color: $dark-blue-text;
+  padding: 7rem 0 15rem 0;
+
+  @include respond(tab-land) {
+    padding-bottom: 7rem;
+  }
+}
+
+.skill-card {
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.8rem;
+  padding: 2.4rem 2.6rem;
+  text-align: left;
+  height: 100%;
+
+  &__title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: $dark-blue-text;
+    margin: 0 0 1.4rem 0;
+    padding-bottom: 0.8rem;
+    border-bottom: 2px solid rgba($primary-color, 0.25);
+  }
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.skill-tag {
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: $dark-blue-text;
+  background: $white-color;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  padding: 0.45rem 1.1rem;
+}

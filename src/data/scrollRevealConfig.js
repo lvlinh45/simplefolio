@@ -23,6 +23,13 @@ export const targetElements = [
     },
   },
   {
+    element: ".hero-meta",
+    animation: {
+      delay: 750,
+      origin: window.innerWidth > 768 ? "left" : "bottom",
+    },
+  },
+  {
     element: ".hero-cta",
     animation: {
       delay: 1000,
@@ -61,6 +68,13 @@ export const targetElements = [
     element: ".contact-wrapper",
     animation: {
       delay: 800,
+      origin: "bottom",
+    },
+  },
+  {
+    element: ".cv-reveal",
+    animation: {
+      delay: 300,
       origin: "bottom",
     },
   },
